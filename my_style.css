@@ -461,3 +461,66 @@ body {
   font-size: 16pt;
   line-height: 31px;
 }
+
+.map_blok {
+  width: 1100px;
+  height: 580px;
+  border: 0px solid rgb(20, 228, 100);
+  position: relative;
+}
+
+.map_search {
+  top: 85px;
+  right: 91px;
+}
+
+.fullKey_blok {
+  width: 1100px;
+  height: 570px;
+  background-color: white;
+  position: relative;
+}
+
+.tr_table {
+  border-top: 1px solid rgb(247, 247, 247);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 113px;
+}
+
+.td_tabl_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 113px;
+}
+
+.td_table_text {
+  border-right: 1px solid rgb(247, 247, 247);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 410px;
+  height: 113px;
+  color: rgb(39, 49, 42);
+  line-height: 20px;
+}
+
+.icon_td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(15, 174, 88);
+  font-size: 13pt;
+  width: 58px;
+  height: 38px;
+  border-radius: 4px;
+  user-select: none;
+  font-weight: 600;
+}
