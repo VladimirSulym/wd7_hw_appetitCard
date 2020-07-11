@@ -504,7 +504,7 @@ body {
 .cherta {
   background-color: rgb(255, 255, 255);
   position: absolute;
-  width: 130px;
+  width: 90px;
   height: 2px;
   transform: rotate(-45deg);
 }
@@ -532,4 +532,64 @@ body {
   border-radius: 4px;
   user-select: none;
   font-weight: 600;
+}
+
+.footer {
+  width: 1280px;
+  height: 442px;
+  position: relative;
+  background-color: rgb(39, 49, 42);
+  margin-top: 57px;
+}
+
+.footer_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid rgb(94, 94, 94);
+  right: 55px;
+  width: 1170px;
+  height: 92px;
+  position: absolute;
+  z-index: 1;
+}
+
+.blok_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  margin-left: 37px;
+}
+
+.blog_socseti {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 194px;
+}
+
+.socseti_logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.socseti_logo a {
+  display: block;
+  width: 25px;
+  height: 25px;
 }
