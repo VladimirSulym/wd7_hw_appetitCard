@@ -9,10 +9,19 @@ body {
 }
 .top_conteiner {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
+
+.conteiner_center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
 .foto_top {
   width: 1280px;
   height: 640px;
