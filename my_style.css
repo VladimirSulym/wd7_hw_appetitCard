@@ -556,6 +556,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid rgb(94, 94, 94);
   right: 55px;
   width: 1170px;
@@ -565,7 +566,7 @@ body {
 }
 
 .blok_info {
-  width: 100%;
+  width: 1100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -573,7 +574,7 @@ body {
 }
 
 .footer_logo {
-  margin-left: 37px;
+  margin-left: 0px;
 }
 
 .blog_socseti {
@@ -601,4 +602,45 @@ body {
   display: block;
   width: 25px;
   height: 25px;
+}
+
+.footer_blok_text {
+  width: 1170px;
+  height: 236px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(94, 94, 94);
+  top: 93px;
+  right: 55px;
+  position: absolute;
+  z-index: 1;
+}
+
+.footer_text {
+  color: white;
+  width: 1100px;
+  height: 236px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 0px solid red;
+}
+.footer_all_right {
+  width: 1100px;
+  height: 112px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px solid #22a83f;
+  left: 90px;
+  top: 329px;
+  position: absolute;
+  z-index: 1;
+  color: white;
 }
