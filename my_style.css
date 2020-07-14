@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -7,6 +9,100 @@ body {
   margin: 0px;
   background: rgb(247, 247, 247);
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* начало меню*/
+
+.menu-opener,
+.menu-opener:hover,
+.menu-opener.active,
+.menu-opener-inner,
+.menu-opener-inner::before,
+.menu-opener-inner::after,
+.menu,
+.menu.active {
+  transition-duration: 150ms;
+  transition-property: all;
+  transition-timing-function: ease-out;
+}
+
+.menu-opener {
+  cursor: pointer;
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: 52px;
+  right: 91px;
+  user-select: none;
+  z-index: 5;
+}
+
+.menu-opener:hover,
+.menu-opener-inner.active {
+  background: transparent;
+}
+
+.menu-opener-inner {
+  background: white;
+  height: 2px;
+  width: 20px;
+  margin-top: 7px;
+}
+
+.menu-opener-inner::before,
+.menu-opener-inner::after {
+  background: white;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+}
+
+.menu-opener-inner::before {
+  transform: translateY(-7px);
+}
+.menu-opener-inner::after {
+  transform: translateY(5px);
+}
+.menu-opener-inner.active {
+  background: transparent;
+}
+.menu-opener-inner.active::before {
+  transform: rotate(-45deg);
+}
+.menu-opener-inner.active::after {
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.menu {
+  background: rgb(39, 49, 42);
+  height: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  user-select: none;
+  z-index: -1;
+  width: 1280px;
+  height: 0px;
+
+}
+.menu.active {
+  height: 753px;
+  z-index: 3;
+}
+.menu.active {
+  color: rgb(17, 17, 17);
+}
+
+/* конец меню*/
+
 .top_conteiner {
   display: flex;
   flex-direction: column;
@@ -45,7 +141,7 @@ body {
   width: 1280px;
   top: 30px;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 .logo_full {
   display: flex;
@@ -697,4 +793,19 @@ body {
   width: 53px;
   height: 53px;
   border: 0px;
+}
+
+.menu_blok_border {
+  width: 1170px;
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(94, 94, 94);
+  top: 0px;
+  right: 55px;
+  position: absolute;
+  z-index: 1;
 }

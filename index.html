@@ -12,6 +12,18 @@
         <div class="foto_top">
           <img src="./Img/foto_top.jpg" alt="" />
           <div class="tonirovka"></div>
+
+          <nav class="menu-opener">
+            <div class="menu-opener-inner"></div>
+          </nav>
+
+          <nav class="menu">
+
+            <div class="menu_blok_border">
+
+            </div>
+          </nav>
+
           <div class="top_info">
             <div class="logo_full">
               APPETIT
@@ -584,5 +596,23 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const toggle = () => {
+        var activeClass = "active";
+
+        if (document.querySelector(".menu-opener").classList.contains(activeClass)) {
+          document.querySelector(".menu-opener-inner").classList.remove(activeClass);
+          document.querySelector(".menu-opener").classList.remove(activeClass);
+          document.querySelector(".menu").classList.remove(activeClass);
+        } else {
+          document.querySelector(".menu-opener-inner").classList.add(activeClass);
+          document.querySelector(".menu-opener").classList.add(activeClass);
+          document.querySelector(".menu").classList.add(activeClass);
+        }
+      };
+      document.querySelector(".menu-opener").onclick = toggle;
+    </script>
+
   </body>
 </html>
