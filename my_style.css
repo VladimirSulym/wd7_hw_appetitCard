@@ -730,7 +730,7 @@ a {
   height: 112px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   border: 0px solid #22a83f;
@@ -739,6 +739,14 @@ a {
   position: absolute;
   z-index: 1;
   color: white;
+}
+
+.no_wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .h_footer {
