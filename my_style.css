@@ -644,3 +644,57 @@ body {
   z-index: 1;
   color: white;
 }
+
+.h_footer {
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #FF9900;
+  font-weight: bold;
+}
+
+.tex_footer {
+  margin-top: 22px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+.tex_footer_email {
+  margin-top: 40px;
+  line-height: 24px;
+  font-weight: lighter;
+}
+
+.email_form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin-top: 16px;
+  width: 344px;
+  height: 55px;
+  border: 1px solid white;
+}
+
+.email_form input[type="text"] {
+  margin-left: 22px;
+  color: rgb(122, 122, 122);
+  background-color: rgb(39, 49, 42);
+  font-size: 18pt;
+  outline: none;
+  width: 269px;
+  height: 100%;
+  border: 0px;
+}
+
+.email_form input[type="text"]::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.email_form input[type="image"] {
+  margin: 0px;
+  background-color: rgb(39, 49, 42);
+  outline: none;
+  width: 53px;
+  height: 53px;
+  border: 0px;
+}
